@@ -9,6 +9,7 @@ RUN pip3 install -r requirements.txt
 COPY mnist /app/mnist
 COPY app.py /app/
 COPY templates /app/templates
+COPY static /app/static
 
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
