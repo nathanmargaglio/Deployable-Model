@@ -6,8 +6,7 @@ This repo [train a neural network on MNIST with Keras](https://www.tensorflow.or
 
 - `python3 -m venv venv`
 - `source venv/bin/activate`
-- `pip install --upgrade pip && pip install flask tensorflow`
-- `pip freeze > requirements.txt`
+- `pip install -r requirements.txt`
 
 ## Train the Model
 
@@ -25,6 +24,8 @@ The Flask app is responsible for two things:
 2) Hosting the endpoint which we pass data to for inference.
 
 The app is found at `app.py` and `templates/` and `static/` hold resources for the front-end.  The site is hosted at `/` and one can POST gray-scale image data to `/infer` to pass the image data to the model for inference.
+
+You can run it locally with `python3 ./app.py` and navigate to `localhost:5000`.
 
 ## Deploy to Heroku
 
