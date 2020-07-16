@@ -11,10 +11,17 @@ This repo [train a neural network on MNIST with Keras](https://www.tensorflow.or
 
 ## Train the Model
 
+This trains a simple neural network to classify MNIST digits.
+
 - `python3 ./train.py`
 
+The model is saved to `mnist/`.
+
 ## Deploy to Heroku
+
+You will need Docker and the Heroku CLI installed and authenticated.
 
 - `heroku container:push web --app <app-name>`
 - `heroku container:release web --app <app-name>`
 
+Once deployed, navigate to (`https://<app-name>.herokuapp.com/`)[https://deployable-model.herokuapp.com/].
