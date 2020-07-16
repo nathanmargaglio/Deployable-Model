@@ -1,0 +1,24 @@
+#app {
+    max-height: 256px;
+    overflow: auto;
+}
+
+.canvas-container {
+    margin: auto;
+}
+
+.card-action {
+    text-align: center;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+  
