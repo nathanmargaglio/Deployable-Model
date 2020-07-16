@@ -6,7 +6,7 @@ This repo [train a neural network on MNIST with Keras](https://www.tensorflow.or
 
 - `python3 -m venv venv`
 - `source venv/bin/activate`
-- `pip install -r requirements.txt`
+- `pip install --upgrade pip && pip install -r requirements.txt`
 
 ## Train the Model
 
