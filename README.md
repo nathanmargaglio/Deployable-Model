@@ -24,4 +24,4 @@ You will need Docker and the Heroku CLI installed and authenticated.
 - `heroku container:push web --app <app-name>`
 - `heroku container:release web --app <app-name>`
 
-Once deployed, navigate to [`https://<app-name>.herokuapp.com/`](https://deployable-model.herokuapp.com/).
+Once deployed, navigate to [`https://<app-name>.herokuapp.com/`](https://deployable-model.herokuapp.com/) (the app may take a minute to load).
