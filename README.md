@@ -17,6 +17,15 @@ This trains a simple neural network to classify MNIST digits.
 
 The model is saved to `mnist/`.
 
+## Build the Flask App
+
+The Flask app is responsible for two things:
+
+1) Serving the static front-end site.
+2) Hosting the endpoint which we pass data to for inference.
+
+The app is found at `app.py` and `templates/` and `static/` hold resources for the front-end.  The site is hosted at `/` and one can POST gray-scale image data to `/infer` to pass the image data to the model for inference.
+
 ## Deploy to Heroku
 
 You will need Docker and the Heroku CLI installed and authenticated.
