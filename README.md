@@ -38,4 +38,6 @@ We can build the image and directly deploy to Heroku with the following commands
 - `heroku container:push web --app <app-name>`
 - `heroku container:release web --app <app-name>`
 
-Once deployed, navigate to [`https://<app-name>.herokuapp.com/`](https://deployable-model.herokuapp.com/) (the app may take a minute to load).
+*Note:*  The first time you push the container to Heroku, you will have to push a layer which contains TensorFlow which is ~2GB large.  This can be slow on Heroku, but updates to the image will skip this layer making any following uploads quick.
+
+Once deployed, navigate to `https://<app-name>.herokuapp.com/` (it may take a minute after release for it setup and load).  [Check out the demo](https://deployable-model.herokuapp.com/), which may take a minute to load since free dynos have to wake up after periods of inactivity.
