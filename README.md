@@ -1,6 +1,9 @@
 # Deploying a Model
 
-This repo [train a neural network on MNIST with Keras](https://www.tensorflow.org/datasets/keras_example), [create a Flask app to serve it](https://towardsdatascience.com/deploying-deep-learning-models-using-tensorflow-serving-with-docker-and-flask-3b9a76ffbbda), then [containerise and deploy the app onto Heroku](https://medium.com/@ksashok/containerise-your-python-flask-using-docker-and-deploy-it-onto-heroku-a0b48d025e43).
+In this repo we:
+- [train a neural network on MNIST with Keras](https://www.tensorflow.org/datasets/keras_example)
+- [create a Flask app to serve it](https://towardsdatascience.com/deploying-deep-learning-models-using-tensorflow-serving-with-docker-and-flask-3b9a76ffbbda)
+- then [containerise and deploy the app onto Heroku](https://medium.com/@ksashok/containerise-your-python-flask-using-docker-and-deploy-it-onto-heroku-a0b48d025e43)
 
 ## Setup the Environment
 
