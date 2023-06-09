@@ -1,3 +1,19 @@
+# UPDATE (06/09/23)
+
+Heroku no longer has a free-tier, which takes a lot of the "fun" out of this repo.  Although this should all generally still work as described, you will need to pay for the dyno (which starts at $5 per month).  Much of this repo is dated regardless, so I won't be updating it (if I were to update it, I'd completely re-write it, etc.).  But the general concept is still valid, so this may serve as reference or, at worst, a relic of history.
+
+At a high-level, here's how I'd _now_ approach this:
+
+1. Use PyTorch instead of TensorFlow (sorry TensorFlow)
+2. Use FastAPI instead of Flask (Flask is arguably still faster to work with, but FastAPI is simple enough and a solid choice)
+3. Deploy the app to AWS Lambda (which can be easily served via [Function URL](https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html)).
+
+You can deploy this app to AWS Lambda in one of two general ways:
+  - Creating a [Lambda container image](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html), pushing that to ECR, and deploying the image to the Lambda
+  - Packaging the Lambda without the model as a zip file, deploying that to Lambda, push the model to S3, then have the Lambda fetch and load the model on initialization.
+
+The container approach more closely matches what I did here originally, and such infrastructure should fall within AWS' free-tier (depending on usage, at least).  I probably would have suggested it originally, but Lambda container images weren't available when I originally wrote this, and keeping everything in a single image makes things a lot simpler.
+
 # Deploying a Model
 
 In this repo we:
